@@ -16,7 +16,7 @@ class DRMServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        UiCommand::macro('drm', function ($command) {
+        UiCommand::macro('de-raaf-media', function ($command) {
             LaravelPreset::install();
 
             $command->info('All finished! Please compile your assets, and you are all set to go!');
