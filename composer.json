@@ -1,0 +1,22 @@
+{
+    "name": "de-raaf-media/laravel-preset",
+    "description": "De Raaf Media Laravel preset.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark de Raaf",
+            "email": "info@deraaf.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "DRM\\LaravelPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["DRM\\LaravelPreset\\DRMServiceProvider"]
+        }
+    }
+}
