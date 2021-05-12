@@ -2,11 +2,10 @@
 
 namespace DRM\LaravelPreset;
 
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
-use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
+use Illuminate\Filesystem\Filesystem;
+use Laravel\Ui\Presets\Preset;
 
-class Preset extends LaravelPreset
+class LaravelPreset extends Preset
 {
     public static function install()
     {

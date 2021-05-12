@@ -3,7 +3,9 @@
 namespace DRM\LaravelPreset;
 
 use Illuminate\Support\ServiceProvider;
-use Laravel\Ui\PresetCommand;
+use Illuminate\Foundation\Console\PresetCommand;
+use Laravel\Ui\UiCommand;
+use Laravel\Ui\AuthCommand;
 
 class DRMServiceProvider extends ServiceProvider
 {
@@ -14,8 +16,8 @@ class DRMServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('drm', function ($command) {
-            Preset::install();
+        UiCommand::macro('drm', function ($command) {
+            LaravelPreset::install();
 
             $command->info('All finished! Please compile your assets, and you are all set to go!');
         });
