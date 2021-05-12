@@ -18,8 +18,8 @@ class LaravelPreset extends Preset
 
     public static function updateIncludes()
     {
-        copy(__DIR__.'/stubs/includes/errors.blade.php', app_path('resources/views/includes/errors.blade.php'));
-        copy(__DIR__.'/stubs/includes/messages.blade.php', app_path('resources/views/includes/messages.blade.php'));
+        copy(__DIR__.'/stubs/includes/errors.blade.php', resource_path('/views/includes/errors.blade.php'));
+        copy(__DIR__.'/stubs/includes/messages.blade.php', resource_path('/views/includes/messages.blade.php'));
 
     }
 
