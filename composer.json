@@ -10,7 +10,8 @@
     ],
 
      "require": {
-        "laravel/ui": "^2.0|^3.0",
+            "laravel/framework": "^8.0",
+            "laravel/ui": "^3.0"
     },
 
     "minimum-stability": "stable",
